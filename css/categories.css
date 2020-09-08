@@ -1,0 +1,12 @@
+.categories-list {
+  list-style: none;
+}
+
+.categories-menu-element {
+  display: inline;
+  padding-left: 50px;
+  color: #a1a1a3;
+  font-size: 18px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=categories.css.map */

@@ -1,0 +1,44 @@
+@import '_variables.scss';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{ 
+    margin: 0 auto; 
+    background-color: $color-gray-background;
+    font-family: 'Montserrat', sans-serif;
+    cursor: context-menu;
+
+} 
+
+a{
+    text-decoration: none;
+}
+
+
+.background-section-1{
+    background-image: url(../images/background-section-1.png);
+    background-repeat: repeat-x;
+    height:auto;
+}
+
+.background-section-2{
+    background-image: url(../images/background-section-2.png);
+    background-repeat: repeat-x;
+    height:auto;
+}
+
+.liquid-wrapper{
+    width:100%;
+    height:0px;
+    position: relative;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import '_menu.scss','_slider.scss','_blog.scss', '_about','_media','_banner','_footer';

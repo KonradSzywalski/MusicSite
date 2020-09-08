@@ -1,0 +1,385 @@
+@import '_variables.scss';
+
+.blog-wrapper{
+    text-align:center;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.blog-wrapper-left{
+    text-align: right;
+    margin-top: 60px;
+    padding-left:2%;
+    width:10%;
+}
+
+.blog-wrapper-right{
+    margin-top: 60px;
+    padding-right:6%;
+    width:90%;
+}
+
+.blog-text-vertical{
+    margin-top:160px;
+    color: $color-white;
+    font-size: 36px;
+    font-weight: 800;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.categories-list{
+    display: flex;
+    max-width: 1600px;
+    overflow: hidden;
+}
+
+.categories-list-element{
+    flex:auto;
+    list-style-type: none;
+    white-space: nowrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    color: $color-white;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: $color-cosmic-purple;
+}
+
+.categories-list-element--last{
+    border-right: none;
+}
+
+.categories-list-element--selected{
+    color: $color-white;
+    font-weight: 800;
+    border-color: $color-white;
+}
+
+.categories-list-link{
+    color: $color-white;
+    cursor: pointer;
+}
+
+.categories-list-link--selected{
+    color: $color-white;
+}
+
+.categories-list-link:hover{
+    color: $color-cosmic-purple;
+    text-decoration: none;
+}
+
+.post-wrapper{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.post-wrapper-left{
+    width: 50%;
+    padding-top: 25px;
+}
+.post-wrapper-right{
+    width: 50%;
+    padding-left:50px;
+    padding-right:2%;
+    display: flex;
+}
+
+.post-wrapper-right-column-1{
+    margin-top: 180px;
+    width: 50%;
+    padding-right:25px;
+}
+
+.post-wrapper-right-column-2{
+    margin-top: 100px;
+    width: 50%;
+    padding-left:25px;
+}
+
+.main-post{
+    background-color: $color-gray-post;
+    text-align: left;
+    transition: all 0.3s;
+    margin-left:50px;
+}
+
+.main-post:hover{
+    transform: translateY(-10px);
+}
+
+.main-post-link{
+    color: $color-white;
+    text-decoration: none;
+}
+
+.main-post-link:hover{
+    color: $color-white;
+    text-decoration: none;
+  
+}
+
+.main-post-img{
+    height:auto;
+    width: 100%; 
+    display:block;
+}
+
+.main-post-text{
+    padding:30px;
+    word-wrap: break-word;
+}
+
+.post-wrapper-main-date{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.post-wrapper-main-header{
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.post-wrapper-main-desc{
+    font-size: 18px;
+}
+
+.off-post-1{
+    background-color: $color-gray-post;
+    width:100%;
+    text-align: left;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: $color-white;
+}
+
+.off-post-1:hover{
+    transform: translateY(-10px);
+}
+
+.off-post-2{
+    margin-top:30px;
+    background-color: $color-gray-post;
+    width:100%;
+    text-align: left;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: $color-white;
+}
+
+.off-post-2:hover{
+    transform: translateY(-10px);
+}
+
+.off-post-3{
+    background-color: $color-gray-post;
+    width:100%;
+    text-align: left;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: $color-white;
+}
+
+.off-post-3:hover{
+    transform: translateY(-10px);
+}
+
+.off-post-4{
+    margin-top:30px;
+    background-color: $color-gray-post;
+    width:100%;
+    text-align: left;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: $color-white;
+}
+
+.off-post-4:hover{
+    transform: translateY(-10px);
+}
+
+.off-post-img{
+    height:auto;
+    width: 100%;  
+}
+
+.off-post-text{
+    padding:15px;
+    word-wrap: break-word;
+}
+
+.post-wrapper-date{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post-wrapper-header{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.post-wrapper-desc{
+    font-size: 16px;
+}
+
+.categories-select-mobile-wrapper{
+    display:none;
+}
+
+.liquid_1{
+    position: absolute;
+    z-index: 3;
+    top:350px;
+    left:0;
+}
+
+
+@media only screen and (max-width: 1680px)  {
+    .categories-list-element{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1200px){ 
+    .liquid_1{
+        display: none;
+    }
+
+    .blog-wrapper{
+        flex-wrap: wrap;
+    }
+
+   .blog-wrapper-left{
+       display: none;
+   }
+   .blog-wrapper-right{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top:0px;
+   }
+
+   .post-wrapper-left{
+        width: 100%;
+    }
+
+    .post-wrapper-right{
+        width: 100%;
+    } 
+
+    .post-wrapper-right-column-1{
+        width: 100%;
+        margin-left:6%;
+        margin-right:0px;
+        margin-top:0px;
+        padding-right: 0px;
+    }
+
+    .post-wrapper-right-column-2{
+        width: 100%;
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:0px;
+        padding-right: 0px;
+        margin-bottom:50px;
+    }
+
+    .post-wrapper-right{
+        padding-right:0px;
+        padding-left:0px;
+    }
+
+    .main-post{
+        margin-left: 6%;
+    }
+
+
+}
+
+@media only screen and (max-width: 992px){ 
+    .categories-select-mobile-wrapper{
+        margin-top:80px;
+        width:100%;
+        display:block;
+        overflow: hidden;
+    }
+
+    .categories-list{
+        display: none;
+    }
+
+
+    .categories-select-mobile{
+        background-color: transparent;
+        color:white;
+        border: none;
+        font-size:20px;
+        float:left;
+        margin-left:6%;
+        padding-bottom:5px;
+        border-bottom: 2px solid;
+        border-color: $color-purple-buttons;
+    }
+
+    .categories-select-mobile-option{
+        color:white;
+        background-color: $color-gray-background;
+    }
+
+    .categories-select-mobile:focus {
+        outline:0;
+    }
+}
+
+@media only screen and (max-width: 768px){ 
+
+    .post-wrapper-left{
+        width: 100%;
+    }
+
+    .main-post{
+        margin-left:6%;
+        margin-right:6%;
+    }
+
+    .blog-wrapper-right{
+        padding-right:0px;
+    }
+
+    .post-wrapper-right{
+        padding-right:0px;
+        padding-left:0px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .post-wrapper-right-column-1{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left:6%;
+        margin-right:6%;
+        margin-top:0px;
+        padding-right: 0px;
+    }
+
+    .post-wrapper-right-column-2{
+        width: 100%;
+        margin-left:6%;
+        margin-right:6%;
+        margin-top:0px;
+        padding-left: 0px;
+        margin-bottom:50px;
+    }
+}
+
+
+

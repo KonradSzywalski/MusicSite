@@ -1,0 +1,131 @@
+@import '_variables.scss';
+
+
+.about-wrapper{
+    text-align:center;
+    display:flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.about-wrapper-left{
+    margin-top: 200px;
+    width:90%;
+    display: flex;
+    order: 0;
+}
+
+.about-wrapper-right{
+    text-align: right;
+    padding-right:2%;
+    width:10%;
+    order: 1;
+}
+
+.about-text-vertical{
+    margin-top: 80px;
+    color: $color-white;
+    font-size: 36px;
+    font-weight: 800;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.about-wrapper-image{
+   
+    width:35%;
+    text-align: left;
+    background: linear-gradient(126deg, $color-purple-gradient 10%, $color-orange-gradient 150%);
+    height:580px;
+}
+
+.about-wrapper-text{
+    position: relative;
+    width:48%;
+    background-color: $color-gray-post;
+    color: $color-white;
+    z-index: 2;
+    text-align: left;
+    padding:80px;
+}
+
+.about-image{
+    position: relative;
+    top:-200px;
+    z-index: 1;
+}
+
+.about-wrapper-header{
+    font-size:48px;
+    font-weight: 800;
+    margin-top:0;
+}
+
+.about-wrapper-desc{
+    font-size:18px;
+    font-weight: 300;
+    padding-bottom:30px;
+}
+
+.about-wrapper-read-more-button{
+    background-color: $color-purple-buttons;
+    font-size: 16px;
+    font-weight: bold;
+    color: $color-white;
+    padding: 8px 30px 8px 30px;
+    border: 2px solid;
+    border-color:$color-purple-buttons;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+.about-wrapper-read-more-button:hover{
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-black; 
+}
+
+.liquid_2{
+    position: absolute;
+    z-index: 3;
+    top:80px;
+    right: 0;
+}
+
+
+@media only screen and (max-width: 1200px)  {
+    .about-wrapper{
+        display: block;
+    }
+
+   .about-wrapper-left{
+       margin-top:50px;
+       width: 100%;
+   }
+   .about-wrapper-right{
+        text-align: center;
+        width: 100%;
+        padding-right:0px;
+   }
+
+   .about-wrapper-text{
+        width: 100%;
+    }
+
+   .about-wrapper-image{
+       display:none;
+   }
+
+   .about-text-vertical{
+    writing-mode: initial;
+    transform: none;
+    }
+
+}
+
+
+@media screen and (max-width:992px){
+    .liquid_2{
+        display:none;
+    }
+}

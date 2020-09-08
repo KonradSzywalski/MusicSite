@@ -1,0 +1,130 @@
+@import '_variables.scss';
+
+.banner-wrapper{
+    width: 100%;
+    height: 358px;
+    background-image: url(../images/banner.png);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-wrapper-text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding:50px;
+    padding-left:10%;
+    font-size: 20px;
+    color:white;
+}
+
+.banner-desc{
+    padding-bottom:10px;
+}
+
+.banner-wrapper-see-more-button{
+    background-color: $color-purple-buttons;
+    font-size: 16px;
+    font-weight: bold;
+    color: $color-white;
+    padding: 8px 30px 8px 30px;
+    border: 2px solid;
+    border-color:$color-purple-buttons;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+.banner-wrapper-see-more-button:hover{
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-black; 
+}
+
+.banner-main-photo{
+    float:right;
+}
+
+.banner-logo{
+    max-width: 313px;
+    height: auto;
+    padding-top:25px;
+
+}
+
+.banner-wrapper-left-column{
+    width:40%;
+ 
+}
+
+.banner-wrapper-right-column{
+    width:60%;
+}
+
+.liquid_4{
+    position: absolute;
+    z-index: 3;
+    top:90px;
+    left: 0;
+}
+
+.liquid_5{ 
+    position: absolute;
+    z-index: 3;
+    top:105px;
+    right: 45%;
+}
+
+.liquid_6{
+    position: absolute;
+    z-index: 9999;
+    top:-30px;
+    right: 0;
+}
+
+@media only screen and (max-width: 1200px){ 
+    .liquid_5{ 
+       display:none;
+    }
+}
+
+
+@media only screen and (max-width: 768px){ 
+
+    .liquid_4{ 
+        display:none;
+     }
+
+    .liquid_6{ 
+        display:none;
+    }
+
+    .banner-wrapper-left-column{
+        width:100%;
+    }
+
+    .banner-wrapper{
+        background-image: none;
+        background: linear-gradient(126deg, $color-purple-gradient 10%, $color-orange-gradient 150%);
+    }
+
+    .banner-main-photo{
+        display: none;
+    }
+    
+    .banner-wrapper-text{
+        text-align: center;
+        padding-right:10%;
+    }
+
+    .banner-logo{
+        padding-top: 0px;
+    }
+
+    .banner-desc{
+        margin-bottom:40px;
+    }
+
+}
+
+
+
